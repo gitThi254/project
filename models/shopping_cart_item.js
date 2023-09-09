@@ -1,10 +1,6 @@
 const { default: mongoose } = require("mongoose");
 
 const shopping_cart_itemSchema = new mongoose.Schema({
-  cart_id: {
-    type: mongoose.Schema.Types.ObjectId,
-    ref: "Shopping_cart",
-  },
   product_item_id: {
     type: mongoose.Schema.Types.ObjectId,
     ref: "Product_item",

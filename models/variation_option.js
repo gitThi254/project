@@ -1,12 +1,6 @@
 const { default: mongoose } = require("mongoose");
 
 const variation_optionSchema = new mongoose.Schema({
-  variation_id: [
-    {
-      type: mongoose.Schema.Types.ObjectId,
-      ref: "Variation",
-    },
-  ],
   value: String,
   product_item: [
     {

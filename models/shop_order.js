@@ -12,19 +12,7 @@ const shop_orderSchame = new mongoose.Schema({
       ref: "User_payment_method",
     },
   ],
-  shipping_address: {
-    type: mongoose.Schema.Types.ObjectId,
-    ref: "Address",
-  },
-  shipping_method: {
-    type: mongoose.Schema.Types.ObjectId,
-    ref: "Shipping_method",
-  },
   order_total,
-  order_status: {
-    type: mongoose.Schema.Types.ObjectId,
-    ref: "Order_status",
-  },
 });
 
 const Shop_order = mongoose.model("Shop_order", shop_orderSchame);

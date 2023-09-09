@@ -1,16 +1,6 @@
 const { default: mongoose } = require("mongoose");
 
 const user_veviewsSchema = new mongoose.Schema({
-  user_id: [
-    {
-      type: mongoose.Schema.Types.ObjectId,
-      ref: "User",
-    },
-  ],
-  order_product_id: {
-    type: mongoose.Schema.Types.ObjectId,
-    ref: "Order_line",
-  },
   rating_value: Number,
   Comment: String,
 });

@@ -1,10 +1,6 @@
 const { default: mongoose } = require("mongoose");
 
 const shopping_cartSchema = new mongoose.Schema({
-  user_id: {
-    type: mongoose.Schema.Types.ObjectId,
-    ref: "User",
-  },
   shopping_cart_item: [
     {
       type: mongoose.Schema.Types.ObjectId,

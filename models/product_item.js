@@ -1,10 +1,6 @@
 const { default: mongoose } = require("mongoose");
 
 const product_itemSchema = new mongoose.Schema({
-  product_id: {
-    type: mongoose.Schema.Types.ObjectId,
-    ref: "Product",
-  },
   SKU: string,
   qty_in_stock: Number,
   product_image: String,
